@@ -1,0 +1,13 @@
+{% extends "blocks.html" %}
+
+{% block content %}
+{% for i in objects %}
+<div class="clip_container">
+    <h3><a href="{{ i.url }}">{{ i.title }}</a></h3>
+    <p><a href="{{ i.url }}">{{ i.description }}</a></p>
+    <a href="{{ i.url }}">
+        <img alt="{{ i.title }}" title="{{ i.title }}" src="{{ i.image.url }}">
+    </a>
+</div>
+{% endfor %}
+{% endblock %}

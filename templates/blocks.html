@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="utf-8" />
+        <title>Anthony Pesce {% block title %}{% endblock %}</title>
+        <meta name="description" content="A journalist and programmer living in Los Angeles..." />
+        <meta name="author" content="Anthony Pesce">
+        <link rel="stylesheet" type="text/css" href="/media/css/reset.css" />
+        <link rel="stylesheet" type="text/css" href="/media/css/styles.css?Q=E" />
+    </head>
+    <body>
+        <div id="header">
+            <h1>Anthony Pesce</h1>
+            <h2>A journalist and programmer living in Los Angeles...</h2>
+            <ul>
+                <li><a href="/">Projects</a> | </li>
+                <li><a href="/about/">About</a></li>
+            </ul>
+        </div>
+        
+        <div id="content">
+            {% block content %}{% endblock %}
+        </div>
+    </body>
+</html>
