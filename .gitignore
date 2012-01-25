@@ -5,6 +5,8 @@ settings_dev.py
 settings_prod.py
 *~
 build/*
+media/*
+static/*
 *.db
 *.pyc
 *.swp
