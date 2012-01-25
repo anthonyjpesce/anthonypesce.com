@@ -18,4 +18,8 @@ if settings.DEVELOPMENT:
             "document_root": settings.MEDIA_ROOT,
             'show_indexes': True, 
             }),
+        url(r"^static/(.*)$", "static.serve", {
+            "document_root": settings.STATIC_ROOT,
+            'show_indexes': True, 
+            }),
     )
