@@ -1,6 +1,5 @@
 django.log
 django.log.*
-settings.py
 settings_dev.py
 settings_prod.py
 *~
